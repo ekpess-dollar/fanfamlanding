@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================================================
+   FAN FAM design tokens — SINGLE SOURCE OF TRUTH
+   Extracted from Figma variables (file TZPwzg8gVnQjanrk1j7E8c).
+   Tailwind theme references these via var(--token); components use the
+   semantic Tailwind classes only.
+   ========================================================================= */
+:root {
+  /* Brand */
+  --brand: #2599f6;          /* Blue/500 — base brand (large display, borders, focus, decorative) */
+  --brand-strong: #1670cc;   /* AA-safe fill: white text passes AA (≈4.96:1) — buttons, CTA */
+  --brand-ink: #135fb0;      /* AA-safe brand TEXT/icons on white & light tints (≈6.3:1) */
+  --brand-600: #1f86db;      /* hover step */
+  --brand-200: #e4f1fc;      /* Blue/200 tint */
+  --brand-100: #f7fafc;      /* Blue/100 lightest */
+  --brand-teal: #07a9b4;     /* wordmark / FAN FAM (logo — exempt from contrast) */
+  --live: #1577d6;           /* LIVE badge (AA-safe with white text) */
+
+  /* Ink / greys */
+  --ink-900: #131314;        /* Grey/900 headings */
+  --ink-800: #2a2a2d;        /* Grey/800 */
+  --ink-700: #414245;        /* Grey/700 body */
+  --ink-500: #6f7076;        /* Grey/500 secondary */
+  --ink-400: #8d8e96;        /* Grey/400 muted */
+  --ink-300: #a5a7af;        /* Grey/300 disabled */
+  --ink-200: #bdbfc9;        /* Grey/200 placeholder */
+  --ink-100: #d3d5e0;        /* Grey/100 border */
+  --ink-50:  #e0e2ee;        /* Grey/50 card border */
+  --ink-10:  #eceefb;        /* Grey/10 hairline / shadow tint */
+
+  /* Surfaces */
+  --surface: #fafafa;        /* card background */
+  --bg: #ffffff;             /* page */
+
+  /* Radii */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-pill: 24px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-card: 0 4px 4px 0 rgba(236, 238, 251, 1);            /* #ECEEFB soft */
+  --shadow-card-lg: 0 12px 32px -8px rgba(19, 19, 20, 0.12);
+  --shadow-btn: 0 0.5px 0.5px 0 rgba(1, 18, 32, 0.2);
+
+  /* Type tracking (from Figma letterSpacing) */
+  --tracking-p1: -0.3px;
+  --tracking-p2: -0.2px;
+  --tracking-p3: -0.1px;
+}
+
+/* ---- Base ---- */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--bg);
+    color: var(--ink-700);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4 {
+    color: var(--ink-900);
+    text-wrap: balance;
+  }
+  /* Visible focus for keyboard users */
+  :focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+/* ---- Reduced motion: kill autoplay/animation for opt-out users ---- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  padding: 12px 16px;
+  background: var(--brand);
+  color: #fff;
+  border-radius: 0 0 8px 0;
+}
+.skip-link:focus {
+  left: 0;
+}
