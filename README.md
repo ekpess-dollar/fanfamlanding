@@ -82,4 +82,3 @@ src/
   below the fold, self-hosted fonts, fully static output (~114 kB first-load JS).
 - **Fidelity:** spacing, radii, type and colour driven by the extracted Figma
   tokens, not approximations.
-```
