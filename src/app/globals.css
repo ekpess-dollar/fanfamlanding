@@ -133,6 +133,25 @@
   }
 }
 
+/* Self-scrolling marquee (Community carousel). Defined here (not in the Tailwind
+   config) so it always hot-reloads and never depends on a config rebuild. */
+@keyframes fanfam-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+.marquee-track {
+  animation: fanfam-marquee 48s linear infinite;
+  will-change: transform;
+}
+.group:hover .marquee-track {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
+
 /* Skip link */
 .skip-link {
   position: absolute;
