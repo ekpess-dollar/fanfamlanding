@@ -40,6 +40,7 @@ const config: Config = {
         // wired to next/font CSS variables (see layout.tsx)
         display: ["var(--font-inter)", "system-ui", "sans-serif"],
         sans: ["var(--font-roboto)", "system-ui", "sans-serif"],
+        mono: ["var(--font-roboto-mono)", "ui-monospace", "monospace"],
       },
       fontSize: {
         // Native app scale (from Figma variables)

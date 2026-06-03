@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Roboto } from "next/font/google";
+import { Inter, Roboto, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
@@ -17,6 +17,13 @@ const roboto = Roboto({
   variable: "--font-roboto",
   display: "swap",
   weight: ["400", "500", "700"],
+});
+
+const robotoMono = Roboto_Mono({
+  subsets: ["latin"],
+  variable: "--font-roboto-mono",
+  display: "swap",
+  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
@@ -41,7 +48,11 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${roboto.variable}`} suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${inter.variable} ${roboto.variable} ${robotoMono.variable}`}
+      suppressHydrationWarning
+    >
       <head>
         {/* No-FOUC theme init: runs before paint, sets .dark from saved choice
             or system preference. Keep in sync with ThemeToggle. */}
