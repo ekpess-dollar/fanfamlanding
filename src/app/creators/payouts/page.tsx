@@ -66,7 +66,7 @@ export default function PayoutsPage() {
           <ol className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {steps.map((s) => (
               <li key={s.n}>
-                <Card className="flex h-full flex-col gap-2 bg-white p-6">
+                <Card className="flex h-full flex-col gap-2 bg-card p-6">
                   <span className="font-display text-display-sm font-extrabold text-brand-ink">{s.n}</span>
                   <h3 className="font-display text-p1 font-bold text-ink-900">{s.title}</h3>
                   <p className="text-p2 text-ink-500">{s.body}</p>

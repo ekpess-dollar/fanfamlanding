@@ -32,7 +32,8 @@
   --ink-10:  #eceefb;        /* Grey/10 hairline / shadow tint */
 
   /* Surfaces */
-  --surface: #fafafa;        /* card background */
+  --surface: #fafafa;        /* section / muted surface */
+  --card: #ffffff;           /* elevated card / nav / inputs */
   --bg: #ffffff;             /* page */
 
   /* Radii */
@@ -53,6 +54,47 @@
   --tracking-p3: -0.1px;
 }
 
+/* =========================================================================
+   DARK THEME — same token names, inverted values. Activated by `.dark` on
+   <html> (toggled by ThemeToggle, persisted in localStorage, no FOUC).
+   Components are unchanged: they reference the same semantic tokens.
+   ========================================================================= */
+.dark {
+  color-scheme: dark;
+
+  /* Brand — keep accents vivid; brand-ink becomes light for text on dark */
+  --brand: #2599f6;
+  --brand-strong: #1670cc;   /* button fill — white text passes AA (≈4.96:1), reads well on dark */
+  --brand-ink: #6cb8ff;      /* AA-safe brand text/icons on dark surfaces */
+  --brand-600: #1f86db;
+  --brand-200: #16293b;      /* dark chip / well tint */
+  --brand-100: #121f2c;      /* dark hover / faint tint */
+  --brand-teal: #2cc6d2;     /* wordmark — brightened for visibility */
+  --live: #2b8ae6;
+
+  /* Ink scale inverted: 900 = lightest (headings), 10 = darkest hairline */
+  --ink-900: #f4f6fb;
+  --ink-800: #e3e6ef;
+  --ink-700: #c6cad4;
+  --ink-500: #9aa0ad;
+  --ink-400: #7c828f;
+  --ink-300: #666c79;
+  --ink-200: #515763;
+  --ink-100: #3b414c;
+  --ink-50:  #2c313b;
+  --ink-10:  #20242d;
+
+  /* Surfaces */
+  --surface: #161922;
+  --card: #1b1f29;
+  --bg: #0f1115;
+
+  /* Shadows tuned for dark (soft light shadow is invisible on dark) */
+  --shadow-card: 0 4px 16px 0 rgba(0, 0, 0, 0.45);
+  --shadow-card-lg: 0 18px 40px -12px rgba(0, 0, 0, 0.6);
+  --shadow-btn: 0 0.5px 0.5px 0 rgba(0, 0, 0, 0.5);
+}
+
 /* ---- Base ---- */
 @layer base {
   html {
@@ -61,6 +103,7 @@
   body {
     background-color: var(--bg);
     color: var(--ink-700);
+    transition: background-color 0.2s ease, color 0.2s ease;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }

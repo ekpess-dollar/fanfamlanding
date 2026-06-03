@@ -28,7 +28,7 @@ export function Placeholder({
       data-placeholder={kind}
       className={cn(
         "relative flex items-center justify-center overflow-hidden border-2 border-dashed border-ink-100",
-        "bg-[repeating-linear-gradient(45deg,var(--brand-100),var(--brand-100)_12px,#fff_12px,#fff_24px)]",
+        "bg-[repeating-linear-gradient(45deg,var(--brand-100),var(--brand-100)_12px,var(--card)_12px,var(--card)_24px)]",
         radius,
         className,
       )}

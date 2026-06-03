@@ -57,7 +57,7 @@ export default function ContactPage() {
               Other ways to reach us
             </h2>
             {channels.map(({ Icon, title, body, contact }) => (
-              <Card key={title} className="flex gap-4 bg-white p-5">
+              <Card key={title} className="flex gap-4 bg-card p-5">
                 <span className="inline-flex size-11 shrink-0 items-center justify-center rounded-md bg-brand-200 text-brand-ink">
                   <Icon className="size-5" />
                 </span>

@@ -21,7 +21,7 @@ function StoreButton({ store }: { store: "ios" | "android" }) {
     <a
       href="#"
       aria-label={`Download FAN FAM on the ${label}`}
-      className="inline-flex items-center gap-3 rounded-pill bg-ink-900 px-5 py-3 text-white transition-colors hover:bg-ink-800"
+      className="inline-flex items-center gap-3 rounded-pill bg-[#111317] px-5 py-3 text-white transition-colors hover:bg-[#1d2026]"
     >
       <svg viewBox="0 0 24 24" className="size-6 shrink-0" fill="currentColor" aria-hidden>
         {store === "ios" ? (

@@ -65,7 +65,7 @@ export default function CareersPage() {
           <ul className="flex flex-col gap-4">
             {roles.map((r) => (
               <li key={r.title}>
-                <Card className="flex flex-col gap-4 bg-white p-6 sm:flex-row sm:items-center sm:justify-between">
+                <Card className="flex flex-col gap-4 bg-card p-6 sm:flex-row sm:items-center sm:justify-between">
                   <div>
                     <h3 className="font-display text-p1 font-bold text-ink-900">{r.title}</h3>
                     <p className="mt-1 text-p2 text-ink-500">

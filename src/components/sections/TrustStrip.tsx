@@ -9,7 +9,7 @@ const stats = [
 
 export function TrustStrip() {
   return (
-    <section aria-label="Key statistics" className="border-y border-ink-10 bg-white">
+    <section aria-label="Key statistics" className="border-y border-ink-10 bg-card">
       <Container className="grid grid-cols-2 gap-8 py-10 md:grid-cols-4">
         {stats.map((s) => (
           <div key={s.label} className="flex flex-col items-center text-center">

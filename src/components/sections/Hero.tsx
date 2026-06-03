@@ -8,7 +8,7 @@ import { ArrowRightIcon, StarIcon, VerifyIcon } from "@/components/ui/Icons";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-brand-100 to-white">
+    <section className="relative overflow-hidden bg-gradient-to-b from-brand-100 to-canvas">
       {/* soft brand glow */}
       <div
         aria-hidden
@@ -47,7 +47,7 @@ export function Hero() {
                   kind="avatar"
                   rounded="full"
                   label=""
-                  className="size-10 ring-2 ring-white"
+                  className="size-10 ring-2 ring-card"
                 />
               ))}
             </div>
@@ -71,7 +71,7 @@ export function Hero() {
           </BrowserFrame>
 
           {/* Floating "creator" card to add human presence + show monetisation */}
-          <div className="absolute -bottom-6 -left-4 hidden w-64 rounded-md border border-ink-50 bg-white p-3 shadow-card-lg sm:flex sm:items-center sm:gap-3">
+          <div className="absolute -bottom-6 -left-4 hidden w-64 rounded-md border border-ink-50 bg-card p-3 shadow-card-lg sm:flex sm:items-center sm:gap-3">
             <Placeholder
               kind="avatar"
               rounded="full"

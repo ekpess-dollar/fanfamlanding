@@ -18,7 +18,7 @@ export function PageHero({
   align = "center",
 }: PageHeroProps) {
   return (
-    <section className="relative overflow-hidden border-b border-ink-10 bg-gradient-to-b from-brand-100 to-white">
+    <section className="relative overflow-hidden border-b border-ink-10 bg-gradient-to-b from-brand-100 to-canvas">
       <div
         aria-hidden
         className="pointer-events-none absolute -top-32 left-1/2 size-[480px] -translate-x-1/2 rounded-full bg-brand-200/50 blur-3xl"

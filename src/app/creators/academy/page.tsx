@@ -49,7 +49,7 @@ export default function AcademyPage() {
           <ul className="grid gap-6 lg:grid-cols-3">
             {featured.map((l) => (
               <li key={l.title}>
-                <Card className="flex h-full flex-col overflow-hidden bg-white">
+                <Card className="flex h-full flex-col overflow-hidden bg-card">
                   <div className="relative">
                     <Placeholder
                       kind="image"
@@ -88,7 +88,7 @@ export default function AcademyPage() {
             {tracks.map((t) => (
               <li key={t.title}>
                 <a href="#" className="block h-full">
-                  <Card className="flex h-full flex-col gap-3 bg-white p-6 transition-shadow hover:shadow-card-lg">
+                  <Card className="flex h-full flex-col gap-3 bg-card p-6 transition-shadow hover:shadow-card-lg">
                     <Badge tone="neutral" className="w-fit">{t.level}</Badge>
                     <h3 className="font-display text-p1 font-bold text-ink-900">{t.title}</h3>
                     <p className="mt-auto flex items-center gap-1 text-p2 font-medium text-brand-ink">

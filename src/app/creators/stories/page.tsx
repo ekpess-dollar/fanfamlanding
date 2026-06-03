@@ -91,7 +91,7 @@ export default function StoriesPage() {
                 </blockquote>
                 <div className="flex gap-4">
                   {s.stats.map((st) => (
-                    <Card key={st.label} className="flex flex-1 flex-col gap-1 bg-white p-4 text-center">
+                    <Card key={st.label} className="flex flex-1 flex-col gap-1 bg-card p-4 text-center">
                       <span className="font-display text-display-sm font-extrabold text-brand-ink">
                         {st.value}
                       </span>

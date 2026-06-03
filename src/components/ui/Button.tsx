@@ -25,9 +25,9 @@ const variants: Record<Variant, string> = {
   primary:
     "bg-brand-strong text-white shadow-btn hover:bg-brand-ink " +
     "[background-image:linear-gradient(180deg,rgba(255,255,255,0.16)_0%,rgba(255,255,255,0)_100%)]",
-  // White pill with hairline border (AA-safe brand-ink text)
+  // Card-surface pill with hairline border (AA-safe brand-ink text; adapts to theme)
   secondary:
-    "bg-white text-brand-ink border border-brand hover:bg-brand-100 shadow-btn",
+    "bg-card text-brand-ink border border-brand hover:bg-brand-100 shadow-btn",
   // Minimal text/ghost
   ghost: "bg-transparent text-ink-700 hover:text-ink-900 hover:bg-ink-10",
 };

@@ -50,7 +50,7 @@ export default function PressPage() {
           <SectionHeading eyebrow="At a glance" title="Company facts" />
           <ul className="grid grid-cols-2 gap-px overflow-hidden rounded-md border border-ink-50 bg-ink-10 sm:grid-cols-3">
             {facts.map((f) => (
-              <li key={f.label} className="flex flex-col gap-1 bg-white p-6">
+              <li key={f.label} className="flex flex-col gap-1 bg-card p-6">
                 <span className="font-display text-display-sm font-extrabold text-ink-900">
                   {f.value}
                 </span>
@@ -70,7 +70,8 @@ export default function PressPage() {
             description="Please don't alter, recolour or stretch the FAN FAM logo. Maintain clear space around the wordmark."
           />
           <div className="grid gap-5 sm:grid-cols-3">
-            <Card className="flex aspect-video items-center justify-center bg-white">
+            {/* Brand asset: logo on a white background (intentionally white in both themes) */}
+            <Card className="flex aspect-video items-center justify-center bg-[#ffffff]">
               <span className="font-display text-[28px] font-semibold text-brand-teal">
                 FAN&nbsp;FAM
               </span>
@@ -102,7 +103,7 @@ export default function PressPage() {
             {coverage.map((c) => (
               <li key={c.title}>
                 <a href="#" className="block">
-                  <Card className="flex flex-col gap-2 bg-white p-6 transition-shadow hover:shadow-card-lg sm:flex-row sm:items-center sm:justify-between">
+                  <Card className="flex flex-col gap-2 bg-card p-6 transition-shadow hover:shadow-card-lg sm:flex-row sm:items-center sm:justify-between">
                     <div>
                       <span className="text-p3 font-semibold uppercase tracking-wide text-brand-ink">
                         {c.outlet}

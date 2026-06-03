@@ -8,7 +8,7 @@ type Status = "idle" | "submitting" | "success" | "error";
 const topics = ["General", "Creator support", "Press", "Partnerships", "Careers"];
 
 const inputClass =
-  "w-full rounded-sm border border-ink-100 bg-white px-4 py-3 text-p1 text-ink-900 " +
+  "w-full rounded-sm border border-ink-100 bg-card px-4 py-3 text-p1 text-ink-900 " +
   "placeholder:text-ink-200 focus-visible:border-brand focus-visible:outline-none";
 
 export function ContactForm() {

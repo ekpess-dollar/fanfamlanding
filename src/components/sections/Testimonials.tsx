@@ -40,7 +40,7 @@ export function Testimonials() {
         />
         <ul className="grid gap-6 lg:grid-cols-3">
           {testimonials.map((t) => (
-            <Card as="li" key={t.handle} className="flex flex-col gap-5 bg-white p-6">
+            <Card as="li" key={t.handle} className="flex flex-col gap-5 bg-card p-6">
               <div className="flex gap-1 text-brand" aria-label="5 out of 5 stars">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <StarIcon key={i} className="size-4 fill-brand" />

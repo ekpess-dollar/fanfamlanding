@@ -13,7 +13,7 @@ export function BrowserFrame({
   return (
     <div
       className={cn(
-        "overflow-hidden rounded-md border border-ink-50 bg-white shadow-card-lg",
+        "overflow-hidden rounded-md border border-ink-50 bg-card shadow-card-lg",
         className,
       )}
     >
@@ -21,7 +21,7 @@ export function BrowserFrame({
         <span className="size-2.5 rounded-full bg-ink-100" />
         <span className="size-2.5 rounded-full bg-ink-100" />
         <span className="size-2.5 rounded-full bg-ink-100" />
-        <span className="ml-3 hidden rounded-full bg-white px-3 py-1 text-p3 text-ink-300 sm:block">
+        <span className="ml-3 hidden rounded-full bg-card px-3 py-1 text-p3 text-ink-300 sm:block">
           {label}
         </span>
       </div>
@@ -41,7 +41,7 @@ export function PhoneFrame({
   return (
     <div
       className={cn(
-        "rounded-[2rem] border border-ink-50 bg-white p-2.5 shadow-card-lg",
+        "rounded-[2rem] border border-ink-50 bg-card p-2.5 shadow-card-lg",
         className,
       )}
     >

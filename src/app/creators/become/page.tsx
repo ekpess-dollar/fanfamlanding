@@ -118,7 +118,7 @@ export default function BecomeCreatorPage() {
           <ul className="flex flex-col gap-4">
             {faqs.map((f) => (
               <li key={f.q}>
-                <details className="group rounded-md border border-ink-50 bg-white p-5 shadow-card">
+                <details className="group rounded-md border border-ink-50 bg-card p-5 shadow-card">
                   <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-p1 font-bold text-ink-900">
                     {f.q}
                     <span className="text-brand-ink transition-transform group-open:rotate-45">＋</span>

@@ -16,7 +16,7 @@ export function CTABand() {
             <h2 className="font-display text-display-md font-extrabold text-white sm:text-display-lg">
               Become a creator on FAN FAM today
             </h2>
-            <p className="text-p1 text-white/85 sm:text-[18px]">
+            <p className="text-p1 text-white/90 sm:text-[18px]">
               It's free to join. Build your profile, bring your fans, and start
               earning in minutes.
             </p>
