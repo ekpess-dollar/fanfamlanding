@@ -106,6 +106,58 @@ src/
 
 ---
 
+## 🧑‍💻 Architecture & conventions (for developers)
+
+This is a standard **React + Next.js (App Router)** codebase — if you know React,
+you know 95% of this. The Next-specific parts are noted below.
+
+### Server vs. client components
+- Components are **React Server Components by default** (they render on the
+  server, ship zero JS). Keep them server-side unless they need interactivity.
+- Add `"use client"` at the top **only** when a component uses hooks, state, or
+  browser APIs. The client components here are: `Navbar`, `ThemeToggle`,
+  `VideoHero`, `ContactForm`. Everything else is a server component.
+
+### Where things live
+- `src/app/**` — **routing** is file-based. A folder with a `page.tsx` is a
+  route; `layout.tsx` is the shared shell (fonts, `<Navbar>`/`<Footer>`,
+  metadata, the no-flash theme script). Each `page.tsx` can `export const metadata`.
+- `src/components/ui/**` — small reusable primitives (`Button`, `Card`, `Badge`,
+  `Media`, `Logo`, `Icons`…). **Reach for these first.**
+- `src/components/sections/**` — full page sections composed from `ui/` parts.
+- `src/components/page/**` — inner-page building blocks (`PageHero`, `Prose`,
+  `LegalLayout`, `ContactForm`).
+- `src/lib/**` — helpers (`cn` classnames joiner, `tokens`).
+- `@/` is the import alias for `src/` (see `tsconfig.json`).
+
+### Styling conventions
+- **Tailwind utility classes only** — no CSS modules / styled-components.
+- **Never hardcode colors/spacing.** Use the semantic token classes
+  (`bg-brand`, `text-ink-900`, `bg-card`, `rounded-pill`, `shadow-card`). They're
+  defined once as CSS variables (see *Design tokens* below) and flip for dark
+  mode automatically — so a raw `bg-white` or `#xxxxxx` is usually a mistake.
+- Combine conditional classes with the `cn()` helper from `@/lib/cn`.
+- Icons are inline SVG components in `src/components/ui/Icons.tsx` (decorative =
+  `aria-hidden`; meaningful = pass a `title`).
+
+### Common tasks
+- **New page:** create `src/app/<route>/page.tsx`, `export const metadata`,
+  open with `<PageHero …>`, compose sections, end with `<CTABand />`. It
+  automatically gets the shared nav/footer from `layout.tsx`.
+- **New section:** add a component in `src/components/sections/`, build it from
+  `ui/` primitives, then drop it into `src/app/page.tsx`.
+- **Add an image:** put it in `public/`, render with the `Media` component
+  (wraps `next/image` for responsive `srcset` + lazy-loading) — always give a
+  meaningful `alt`. Swap any `<Placeholder>` for real assets the same way.
+- **Change the brand/theme:** edit the CSS variables in `globals.css` only.
+
+### Quality bar to keep
+Semantic HTML + `alt` text, keyboard focus states, **WCAG-AA contrast**, and
+`prefers-reduced-motion` handling (it disables the hero autoplay and the
+Community carousel). Run `npm run lint` before pushing.
+
+---
+
 ## 🎨 Design tokens & theming
 
 All raw values live **once** in [`src/app/globals.css`](src/app/globals.css) as
@@ -115,7 +167,7 @@ so components only use semantic classes (`bg-brand`, `text-ink-900`,
 
 | Group | Tokens |
 |---|---|
-| Brand | `--brand` `#2599F6` · `--brand-strong` (AA fills) · `--brand-ink` (AA text) · `--brand-teal` `#07A9B4` (wordmark) |
+| Brand | `--brand` `#2599F6` (logo mark, accents) · `--brand-strong` (AA fills) · `--brand-ink` (AA text) |
 | Ink | `--ink-900 … --ink-10` (text + borders) |
 | Surfaces | `--bg` (page) · `--surface` (sections) · `--card` (elevated) |
 | Radii | `4 / 8 / 16 / 24 / full` |
