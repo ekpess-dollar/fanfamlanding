@@ -92,7 +92,7 @@ export function Footer() {
       <div className="border-t border-ink-10">
         <Container className="flex flex-col items-center justify-between gap-4 py-6 sm:flex-row">
           <p className="text-p3 text-ink-500">
-            © {new Date().getFullYear()} FAN FAM. All rights reserved.
+            © {new Date().getFullYear()} Fanation. All rights reserved.
           </p>
           <ul className="flex flex-wrap items-center gap-x-6 gap-y-2">
             {legal.map((l) => (

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { LegalLayout, type LegalSection } from "@/components/page/LegalLayout";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — FAN FAM",
-  description: "How FAN FAM collects, uses and protects your personal data.",
+  title: "Privacy Policy — Fanation",
+  description: "How Fanation collects, uses and protects your personal data.",
 };
 
 const sections: LegalSection[] = [
@@ -12,7 +12,7 @@ const sections: LegalSection[] = [
     heading: "1. Overview",
     body: (
       <p>
-        This Privacy Policy explains what information FAN FAM collects, how we use
+        This Privacy Policy explains what information Fanation collects, how we use
         it, and the choices you have. We aim to collect only what we need to run
         the Service and to keep your data secure.
       </p>
@@ -37,7 +37,7 @@ const sections: LegalSection[] = [
       <ul>
         <li>To provide, maintain and improve the Service.</li>
         <li>To process payments, subscriptions and creator payouts.</li>
-        <li>To keep FAN FAM safe and prevent fraud and abuse.</li>
+        <li>To keep Fanation safe and prevent fraud and abuse.</li>
         <li>To communicate with you about your account and updates.</li>
       </ul>
     ),
@@ -99,7 +99,7 @@ const sections: LegalSection[] = [
     body: (
       <p>
         For privacy questions or requests, email{" "}
-        <a href="mailto:privacy@fanfam.app">privacy@fanfam.app</a> or visit our{" "}
+        <a href="mailto:privacy@fanation.app">privacy@fanation.app</a> or visit our{" "}
         <a href="/contact">Contact</a> page.
       </p>
     ),
@@ -110,7 +110,7 @@ export default function PrivacyPage() {
   return (
     <LegalLayout
       title="Privacy Policy"
-      intro="Your privacy matters. Here's how we handle your personal data on FAN FAM."
+      intro="Your privacy matters. Here's how we handle your personal data on Fanation."
       updated="1 June 2026"
       sections={sections}
     />

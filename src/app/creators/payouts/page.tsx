@@ -8,9 +8,9 @@ import { CTABand } from "@/components/sections/CTABand";
 import { CoinIcon, ShieldIcon, CalendarIcon, ArrowRightIcon } from "@/components/ui/Icons";
 
 export const metadata: Metadata = {
-  title: "Payouts — FAN FAM",
+  title: "Payouts — Fanation",
   description:
-    "How creators get paid on FAN FAM: transparent fees, fast withdrawals, multiple payout methods and clear schedules. No hidden charges.",
+    "How creators get paid on Fanation: transparent fees, fast withdrawals, multiple payout methods and clear schedules. No hidden charges.",
 };
 
 const highlights = [

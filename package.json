@@ -1,8 +1,8 @@
 {
-  "name": "fanfam-landing",
+  "name": "fanation-landing",
   "version": "0.1.0",
   "private": true,
-  "description": "Marketing landing page for FAN FAM — built from Figma design tokens",
+  "description": "Marketing landing page for Fanation — built from Figma design tokens",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

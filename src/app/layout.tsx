@@ -27,11 +27,11 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FAN FAM — Where creators and fans connect",
+  title: "Fanation — Where creators and fans connect",
   description:
-    "FAN FAM is the social platform built for creators. Share posts, go live, build subscriptions, gift your favourites, and grow a community that pays you back.",
+    "Fanation is the social platform built for creators. Share posts, go live, build subscriptions, gift your favourites, and grow a community that pays you back.",
   openGraph: {
-    title: "FAN FAM — Where creators and fans connect",
+    title: "Fanation — Where creators and fans connect",
     description:
       "Share posts, go live, build subscriptions, and grow a community that pays you back.",
     type: "website",

@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/Button";
 import { ArrowRightIcon } from "@/components/ui/Icons";
 
 export const metadata: Metadata = {
-  title: "Careers — FAN FAM",
+  title: "Careers — Fanation",
   description:
-    "Help build the fairest home for creators. Explore open roles at FAN FAM across engineering, design, product and creator partnerships.",
+    "Help build the fairest home for creators. Explore open roles at Fanation across engineering, design, product and creator partnerships.",
 };
 
 const perks = [
@@ -42,7 +42,7 @@ export default function CareersPage() {
       {/* Perks */}
       <section className="py-16 sm:py-20">
         <Container className="flex flex-col gap-12">
-          <SectionHeading eyebrow="Why FAN FAM" title="Great work, looked after" />
+          <SectionHeading eyebrow="Why Fanation" title="Great work, looked after" />
           <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {perks.map((p) => (
               <Card as="li" key={p.title} className="flex flex-col gap-2 p-6">

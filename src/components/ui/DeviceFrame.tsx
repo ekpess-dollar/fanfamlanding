@@ -4,7 +4,7 @@ import { cn } from "@/lib/cn";
 export function BrowserFrame({
   children,
   className,
-  label = "fanfam.app",
+  label = "fanation.app",
 }: {
   children: React.ReactNode;
   className?: string;

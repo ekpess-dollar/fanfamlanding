@@ -26,7 +26,7 @@ export function Hero() {
           </h1>
           <p className="max-w-xl text-p1 text-ink-500 sm:text-[18px] sm:leading-8">
             Post, go live, and build subscriptions on one platform that pays you
-            back. FAN FAM turns your community into income — with gifting, coins,
+            back. Fanation turns your community into income — with gifting, coins,
             and direct messaging built in.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
@@ -60,10 +60,10 @@ export function Hero() {
 
         {/* Product video + human overlay */}
         <div className="relative animate-fade-up">
-          <BrowserFrame label="fanfam.app/home">
+          <BrowserFrame label="fanation.app/home">
             <VideoHero
               poster="/images/product-home.png"
-              label="FAN FAM home feed in action — scrolling posts, live creators and gifting"
+              label="Fanation home feed in action — scrolling posts, live creators and gifting"
               className="aspect-[1440/850] w-full"
               // sources left empty → poster shows until a real demo video is added
               // (see public/video/README.md)

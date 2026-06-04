@@ -6,29 +6,29 @@ import { Card } from "@/components/ui/Card";
 import { MessageIcon, UsersIcon, ShieldIcon } from "@/components/ui/Icons";
 
 export const metadata: Metadata = {
-  title: "Contact — FAN FAM",
+  title: "Contact — Fanation",
   description:
-    "Get in touch with the FAN FAM team. Creator support, press, partnerships or general questions — we're here to help.",
+    "Get in touch with the Fanation team. Creator support, press, partnerships or general questions — we're here to help.",
 };
 
 const channels = [
   {
     Icon: MessageIcon,
     title: "General & support",
-    body: "Questions about your account or how FAN FAM works.",
-    contact: "hello@fanfam.app",
+    body: "Questions about your account or how Fanation works.",
+    contact: "hello@fanation.app",
   },
   {
     Icon: UsersIcon,
     title: "Partnerships",
     body: "Brand deals, integrations and collaborations.",
-    contact: "partners@fanfam.app",
+    contact: "partners@fanation.app",
   },
   {
     Icon: ShieldIcon,
     title: "Trust & safety",
     body: "Report abuse or raise a safety concern.",
-    contact: "safety@fanfam.app",
+    contact: "safety@fanation.app",
   },
 ];
 

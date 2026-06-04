@@ -21,7 +21,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-ink-10 bg-card/85 backdrop-blur supports-[backdrop-filter]:bg-card/70">
       <Container>
         <nav className="flex h-16 items-center justify-between gap-6" aria-label="Primary">
-          <a href="#main" className="flex items-center gap-2" aria-label="FAN FAM home">
+          <a href="#main" className="flex items-center gap-2" aria-label="Fanation home">
             <Logo />
           </a>
 
@@ -44,7 +44,7 @@ export function Navbar() {
             <Button href="/contact" variant="ghost">
               Log in
             </Button>
-            <Button href="/creators/become">Join FAN FAM</Button>
+            <Button href="/creators/become">Join Fanation</Button>
           </div>
 
           {/* Mobile actions */}
@@ -87,7 +87,7 @@ export function Navbar() {
               Log in
             </Button>
             <Button href="/creators/become" size="lg">
-              Join FAN FAM
+              Join Fanation
             </Button>
           </div>
         </Container>

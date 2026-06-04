@@ -4,7 +4,7 @@ import { Media } from "@/components/ui/Media";
 
 /**
  * "Who it's for" — humanising section. Real creator portraits exported from the
- * FAN FAM Figma design (nodes 10006:4663 / 10009), shown as a self-scrolling
+ * Fanation Figma design (nodes 10006:4663 / 10009), shown as a self-scrolling
  * marquee over the source's decorative treatment: a blurred room backdrop, a
  * soft-light noise grain, and a torn "cloud" edge at top and bottom.
  */
@@ -75,7 +75,7 @@ export function Community() {
           <SectionHeading
             eyebrow="Who it's for"
             title="A home for every kind of creator"
-            description="From musicians to coaches to everyday storytellers — FAN FAM is built for people who want to share what they love and get paid for it."
+            description="From musicians to coaches to everyday storytellers — Fanation is built for people who want to share what they love and get paid for it."
           />
         </Container>
 

@@ -1,6 +1,6 @@
 /**
  * Inline icon set (stroke style mirrors the Vuesax outline icons used in the
- * FAN FAM app). Decorative by default (aria-hidden); pass `title` for meaning.
+ * Fanation app). Decorative by default (aria-hidden); pass `title` for meaning.
  */
 export type IconProps = {
   className?: string;

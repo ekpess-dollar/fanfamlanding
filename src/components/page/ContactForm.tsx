@@ -87,7 +87,7 @@ export function ContactForm() {
 
       {status === "error" && (
         <p role="alert" className="text-p2 text-red-600">
-          Something went wrong. Please try again or email hello@fanfam.app.
+          Something went wrong. Please try again or email hello@fanation.app.
         </p>
       )}
 

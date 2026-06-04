@@ -9,9 +9,9 @@ import { Placeholder } from "@/components/ui/Placeholder";
 import { ArrowRightIcon, PlayIcon } from "@/components/ui/Icons";
 
 export const metadata: Metadata = {
-  title: "Creator Academy — FAN FAM",
+  title: "Creator Academy — Fanation",
   description:
-    "Free guides, courses and playbooks to help you grow your audience and earn more on FAN FAM. Learn from creators who've done it.",
+    "Free guides, courses and playbooks to help you grow your audience and earn more on Fanation. Learn from creators who've done it.",
 };
 
 const tracks = [

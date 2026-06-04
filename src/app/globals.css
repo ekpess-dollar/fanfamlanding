@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* =========================================================================
-   FAN FAM design tokens — SINGLE SOURCE OF TRUTH
+   Fanation design tokens — SINGLE SOURCE OF TRUTH
    Extracted from Figma variables (file TZPwzg8gVnQjanrk1j7E8c).
    Tailwind theme references these via var(--token); components use the
    semantic Tailwind classes only.
@@ -16,7 +16,7 @@
   --brand-600: #1f86db;      /* hover step */
   --brand-200: #e4f1fc;      /* Blue/200 tint */
   --brand-100: #f7fafc;      /* Blue/100 lightest */
-  --brand-teal: #07a9b4;     /* wordmark / FAN FAM (logo — exempt from contrast) */
+  --brand-teal: #07a9b4;     /* wordmark / Fanation (logo — exempt from contrast) */
   --live: #1577d6;           /* LIVE badge (AA-safe with white text) */
 
   /* Ink / greys */
@@ -135,12 +135,12 @@
 
 /* Self-scrolling marquee (Community carousel). Defined here (not in the Tailwind
    config) so it always hot-reloads and never depends on a config rebuild. */
-@keyframes fanfam-marquee {
+@keyframes fanation-marquee {
   from { transform: translateX(0); }
   to { transform: translateX(-100%); }
 }
 .marquee-track {
-  animation: fanfam-marquee 48s linear infinite;
+  animation: fanation-marquee 48s linear infinite;
   will-change: transform;
 }
 .group:hover .marquee-track {

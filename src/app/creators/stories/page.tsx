@@ -8,9 +8,9 @@ import { CTABand } from "@/components/sections/CTABand";
 import { VerifyIcon } from "@/components/ui/Icons";
 
 export const metadata: Metadata = {
-  title: "Success Stories — FAN FAM",
+  title: "Success Stories — Fanation",
   description:
-    "Real creators, real income. See how musicians, coaches and artists built sustainable businesses on FAN FAM.",
+    "Real creators, real income. See how musicians, coaches and artists built sustainable businesses on Fanation.",
 };
 
 const stories = [
@@ -19,7 +19,7 @@ const stories = [
     handle: "@yummychill54",
     niche: "Lifestyle creator",
     quote:
-      "I moved my whole community to FAN FAM and tripled my monthly income in two months. Gifting during live streams changed everything.",
+      "I moved my whole community to Fanation and tripled my monthly income in two months. Gifting during live streams changed everything.",
     stats: [
       { value: "3×", label: "Income in 8 weeks" },
       { value: "4.8k", label: "Subscribers" },
@@ -58,7 +58,7 @@ export default function StoriesPage() {
       <PageHero
         eyebrow="Success stories"
         title="Real creators. Real income."
-        description="From bedroom producers to full-time artists — here's how creators are building sustainable businesses on FAN FAM."
+        description="From bedroom producers to full-time artists — here's how creators are building sustainable businesses on Fanation."
       />
 
       <section className="py-16 sm:py-section">

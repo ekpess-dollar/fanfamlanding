@@ -5,12 +5,13 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { Placeholder } from "@/components/ui/Placeholder";
+import { Logo } from "@/components/ui/Logo";
 import { ArrowRightIcon } from "@/components/ui/Icons";
 
 export const metadata: Metadata = {
-  title: "Press — FAN FAM",
+  title: "Press — Fanation",
   description:
-    "FAN FAM press kit, brand assets, company facts and media contact. Everything journalists need to cover the creator platform.",
+    "Fanation press kit, brand assets, company facts and media contact. Everything journalists need to cover the creator platform.",
 };
 
 const facts = [
@@ -23,7 +24,7 @@ const facts = [
 ];
 
 const coverage = [
-  { outlet: "TechReview", title: "How FAN FAM is rewriting the rules of creator payouts", date: "Mar 2026" },
+  { outlet: "TechReview", title: "How Fanation is rewriting the rules of creator payouts", date: "Mar 2026" },
   { outlet: "The Wire", title: "The all-in-one app creators didn't know they needed", date: "Jan 2026" },
   { outlet: "Founders Daily", title: "Inside the platform putting fans and creators on equal footing", date: "Nov 2025" },
 ];
@@ -34,7 +35,7 @@ export default function PressPage() {
       <PageHero
         eyebrow="Press & media"
         title="Press kit & media resources"
-        description="Covering FAN FAM? Grab our brand assets, company facts, and reach our media team below."
+        description="Covering Fanation? Grab our brand assets, company facts, and reach our media team below."
       >
         <div className="flex flex-col gap-3 sm:flex-row">
           <Button href="#assets">Download press kit</Button>
@@ -67,19 +68,15 @@ export default function PressPage() {
           <SectionHeading
             eyebrow="Brand assets"
             title="Logos & screenshots"
-            description="Please don't alter, recolour or stretch the FAN FAM logo. Maintain clear space around the wordmark."
+            description="Please don't alter, recolour or stretch the Fanation logo. Maintain clear space around the wordmark."
           />
           <div className="grid gap-5 sm:grid-cols-3">
             {/* Brand asset: logo on a white background (intentionally white in both themes) */}
             <Card className="flex aspect-video items-center justify-center bg-[#ffffff]">
-              <span className="font-display text-[28px] font-semibold text-brand-teal">
-                FAN&nbsp;FAM
-              </span>
+              <Logo className="scale-125" />
             </Card>
-            <Card className="flex aspect-video items-center justify-center bg-brand-strong">
-              <span className="font-display text-[28px] font-semibold text-white">
-                FAN&nbsp;FAM
-              </span>
+            <Card className="flex aspect-video items-center justify-center bg-brand-strong text-white">
+              <Logo className="scale-125" mono />
             </Card>
             <Placeholder
               kind="image"
@@ -120,8 +117,8 @@ export default function PressPage() {
           </ul>
           <p className="text-p2 text-ink-500">
             Media enquiries:{" "}
-            <a href="mailto:press@fanfam.app" className="font-medium text-brand-ink underline underline-offset-2">
-              press@fanfam.app
+            <a href="mailto:press@fanation.app" className="font-medium text-brand-ink underline underline-offset-2">
+              press@fanation.app
             </a>
           </p>
         </Container>

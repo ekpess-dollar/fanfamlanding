@@ -10,15 +10,15 @@ import { CTABand } from "@/components/sections/CTABand";
 import { CoinIcon, LockIcon, GiftIcon, LiveIcon, ArrowRightIcon } from "@/components/ui/Icons";
 
 export const metadata: Metadata = {
-  title: "Become a Creator — FAN FAM",
+  title: "Become a Creator — Fanation",
   description:
-    "Turn your audience into income on FAN FAM. Set up subscriptions, go live, accept gifts and get paid — all in one place. Free to start.",
+    "Turn your audience into income on Fanation. Set up subscriptions, go live, accept gifts and get paid — all in one place. Free to start.",
 };
 
 const steps = [
   { n: "01", title: "Create your profile", body: "Sign up free, add your bio and photos, and get verified in minutes." },
   { n: "02", title: "Set up earning", body: "Choose subscription tiers, enable coins and gifting, and price your content." },
-  { n: "03", title: "Share & go live", body: "Post, stream, and message your fans. Promote your FAN FAM link everywhere." },
+  { n: "03", title: "Share & go live", body: "Post, stream, and message your fans. Promote your Fanation link everywhere." },
   { n: "04", title: "Get paid", body: "Watch earnings land in your dashboard and cash out on your schedule." },
 ];
 
@@ -33,7 +33,7 @@ const faqs = [
   { q: "Is it free to become a creator?", a: "Yes. Creating a profile and setting up your tools is completely free — we only take a share when you earn." },
   { q: "How much can I earn?", a: "There's no cap. You set your subscription prices, and tips and gifts are on top. Top creators earn a full-time income." },
   { q: "When do I get paid?", a: "Earnings are available to withdraw on a rolling basis. See the Payouts page for schedules and methods." },
-  { q: "Do I need a big following?", a: "No. Many creators start small and grow on FAN FAM thanks to discovery, live streams and word of mouth." },
+  { q: "Do I need a big following?", a: "No. Many creators start small and grow on Fanation thanks to discovery, live streams and word of mouth." },
 ];
 
 export default function BecomeCreatorPage() {
@@ -42,7 +42,7 @@ export default function BecomeCreatorPage() {
       <PageHero
         eyebrow="For creators"
         title="Get paid for the community you've built"
-        description="FAN FAM gives you subscriptions, gifting, live streaming and messaging in one place — so you can focus on creating, not chasing payments."
+        description="Fanation gives you subscriptions, gifting, live streaming and messaging in one place — so you can focus on creating, not chasing payments."
       >
         <div className="flex flex-col gap-3 sm:flex-row">
           <Button href="#start" size="lg">
@@ -97,11 +97,11 @@ export default function BecomeCreatorPage() {
               ))}
             </ol>
           </div>
-          <BrowserFrame label="fanfam.app/you" className="mx-auto max-w-xl">
+          <BrowserFrame label="fanation.app/you" className="mx-auto max-w-xl">
             <div className="max-h-[480px] overflow-hidden">
               <Media
                 src="/images/product-profile.png"
-                alt="A FAN FAM creator profile with posts, a subscribe button and gifting options"
+                alt="A Fanation creator profile with posts, a subscribe button and gifting options"
                 width={1440}
                 height={2351}
                 sizes="(max-width: 1024px) 100vw, 560px"

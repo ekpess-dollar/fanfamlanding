@@ -14,7 +14,7 @@ export function CTABand() {
           />
           <div className="relative mx-auto flex max-w-2xl flex-col items-center gap-6">
             <h2 className="font-display text-display-md font-extrabold text-white sm:text-display-lg">
-              Become a creator on FAN FAM today
+              Become a creator on Fanation today
             </h2>
             <p className="text-p1 text-white/90 sm:text-[18px]">
               It's free to join. Build your profile, bring your fans, and start

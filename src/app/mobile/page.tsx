@@ -9,9 +9,9 @@ import { Placeholder } from "@/components/ui/Placeholder";
 import { LiveIcon, MessageIcon, CoinIcon } from "@/components/ui/Icons";
 
 export const metadata: Metadata = {
-  title: "Get the App — FAN FAM",
+  title: "Get the App — Fanation",
   description:
-    "FAN FAM on iOS and Android. Post, go live, message and earn from your pocket. Download the app and take your community everywhere.",
+    "Fanation on iOS and Android. Post, go live, message and earn from your pocket. Download the app and take your community everywhere.",
 };
 
 function StoreButton({ store }: { store: "ios" | "android" }) {
@@ -20,7 +20,7 @@ function StoreButton({ store }: { store: "ios" | "android" }) {
   return (
     <a
       href="#"
-      aria-label={`Download FAN FAM on the ${label}`}
+      aria-label={`Download Fanation on the ${label}`}
       className="inline-flex items-center gap-3 rounded-pill bg-[#111317] px-5 py-3 text-white transition-colors hover:bg-[#1d2026]"
     >
       <svg viewBox="0 0 24 24" className="size-6 shrink-0" fill="currentColor" aria-hidden>
@@ -49,7 +49,7 @@ export default function MobilePage() {
     <>
       <PageHero
         eyebrow="Mobile app"
-        title="FAN FAM goes everywhere you do"
+        title="Fanation goes everywhere you do"
         description="Post, stream, message and earn from iOS and Android. Your whole community, right in your pocket."
       >
         <div className="flex flex-col gap-3 sm:flex-row">
@@ -65,7 +65,7 @@ export default function MobilePage() {
             <PhoneFrame className="w-44 sm:w-52">
               <Media
                 src="/images/product-home.png"
-                alt="FAN FAM home feed on mobile"
+                alt="Fanation home feed on mobile"
                 width={1440}
                 height={850}
                 sizes="208px"
@@ -75,7 +75,7 @@ export default function MobilePage() {
             <PhoneFrame className="mt-8 w-44 sm:w-52">
               <Media
                 src="/images/product-messages.png"
-                alt="FAN FAM messages on mobile"
+                alt="Fanation messages on mobile"
                 width={1440}
                 height={1150}
                 sizes="208px"
@@ -115,7 +115,7 @@ export default function MobilePage() {
               Scan to download
             </h2>
             <p className="max-w-md text-p1 text-ink-500">
-              Point your camera at the code to grab FAN FAM on iOS or Android.
+              Point your camera at the code to grab Fanation on iOS or Android.
               Rated <strong className="text-ink-900">4.9★</strong> by creators worldwide.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">

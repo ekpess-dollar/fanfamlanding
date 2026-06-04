@@ -39,8 +39,8 @@ const features: Feature[] = [
       src: "/images/product-profile.png",
       w: 1440,
       h: 2351,
-      alt: "FAN FAM creator profile showing posts, subscriber button and gifting",
-      label: "fanfam.app/priscilia",
+      alt: "Fanation creator profile showing posts, subscriber button and gifting",
+      label: "fanation.app/priscilia",
     },
   },
   {
@@ -58,8 +58,8 @@ const features: Feature[] = [
       src: "/images/product-live.png",
       w: 1440,
       h: 844,
-      alt: "FAN FAM live streaming screen with a live chat panel",
-      label: "fanfam.app/live",
+      alt: "Fanation live streaming screen with a live chat panel",
+      label: "fanation.app/live",
     },
     reverse: true,
   },
@@ -78,8 +78,8 @@ const features: Feature[] = [
       src: "/images/product-messages.png",
       w: 1440,
       h: 1150,
-      alt: "FAN FAM messages screen with group chats and shared media",
-      label: "fanfam.app/messages",
+      alt: "Fanation messages screen with group chats and shared media",
+      label: "fanation.app/messages",
     },
   },
 ];
@@ -133,7 +133,7 @@ export function Features() {
         <SectionHeading
           eyebrow="Everything in one place"
           title="One platform for posting, streaming, and earning"
-          description="FAN FAM brings your feed, your live streams, your messages, and your money together — so you can focus on creating."
+          description="Fanation brings your feed, your live streams, your messages, and your money together — so you can focus on creating."
         />
         {features.map((f) => (
           <FeatureRow key={f.id} {...f} />

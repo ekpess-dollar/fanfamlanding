@@ -7,7 +7,7 @@ import { StarIcon, VerifyIcon } from "@/components/ui/Icons";
 const testimonials = [
   {
     quote:
-      "I moved my whole community to FAN FAM and tripled my monthly income in two months. Gifting during live streams is a game changer.",
+      "I moved my whole community to Fanation and tripled my monthly income in two months. Gifting during live streams is a game changer.",
     name: "Priscilia O.",
     handle: "@yummychill54",
     avatar: "Portrait 120×120 — Priscilia, smiling",
@@ -36,7 +36,7 @@ export function Testimonials() {
           id="testimonials-title"
           eyebrow="Loved by creators"
           title="Real creators, real income"
-          description="Hear from the people building their living on FAN FAM every day."
+          description="Hear from the people building their living on Fanation every day."
         />
         <ul className="grid gap-6 lg:grid-cols-3">
           {testimonials.map((t) => (

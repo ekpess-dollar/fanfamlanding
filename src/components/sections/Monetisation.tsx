@@ -32,7 +32,7 @@ export function Monetisation() {
       <Container className="flex flex-col gap-12">
         <SectionHeading
           eyebrow="Earn your way"
-          title="Four ways to get paid on FAN FAM"
+          title="Four ways to get paid on Fanation"
           description="No gatekeeping, no guesswork. Mix and match the tools that fit how you create — and keep more of what you make."
         />
         <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">

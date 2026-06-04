@@ -1,10 +1,10 @@
-# FAN FAM — Marketing Landing Site
+# Fanation — Marketing Landing Site
 
-A production-quality marketing site for **FAN FAM**, a creator/fan social
+A production-quality marketing site for **Fanation**, a creator/fan social
 platform (subscriptions, gifting, live streaming, messaging, coins/tips).
 
 Built with **Next.js (App Router) + Tailwind CSS**, driven entirely by design
-tokens extracted from the FAN FAM Figma design system (file
+tokens extracted from the Fanation Figma design system (file
 `TZPwzg8gVnQjanrk1j7E8c`). The Figma file is the *product app*, so this site is
 designed fresh from its tokens and uses real exported app screens as product
 media.

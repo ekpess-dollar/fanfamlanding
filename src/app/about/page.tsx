@@ -8,9 +8,9 @@ import { CTABand } from "@/components/sections/CTABand";
 import { HeartIcon, UsersIcon, ShieldIcon, CoinIcon } from "@/components/ui/Icons";
 
 export const metadata: Metadata = {
-  title: "About — FAN FAM",
+  title: "About — Fanation",
   description:
-    "FAN FAM is on a mission to help creators earn a living from the communities they build. Meet the team and the values behind the platform.",
+    "Fanation is on a mission to help creators earn a living from the communities they build. Meet the team and the values behind the platform.",
 };
 
 const values = [
@@ -49,7 +49,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="Our story"
         title="We're building the fairest home for creators"
-        description="FAN FAM started with a simple belief: the people who make the internet worth showing up for deserve to earn a real living from it."
+        description="Fanation started with a simple belief: the people who make the internet worth showing up for deserve to earn a real living from it."
       />
 
       {/* Mission */}
@@ -65,9 +65,9 @@ export default function AboutPage() {
               gatekept, and going live meant juggling five different apps.
             </p>
             <p className="text-p1 leading-7 text-ink-500 sm:text-[17px]">
-              So we built FAN FAM — one place to post, stream, message, and get
+              So we built Fanation — one place to post, stream, message, and get
               paid. Today thousands of musicians, coaches, artists and everyday
-              storytellers use FAN FAM to turn their audience into dependable
+              storytellers use Fanation to turn their audience into dependable
               income.
             </p>
           </div>

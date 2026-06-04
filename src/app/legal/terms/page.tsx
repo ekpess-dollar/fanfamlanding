@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { LegalLayout, type LegalSection } from "@/components/page/LegalLayout";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — FAN FAM",
-  description: "The terms and conditions governing your use of FAN FAM.",
+  title: "Terms of Service — Fanation",
+  description: "The terms and conditions governing your use of Fanation.",
 };
 
 const sections: LegalSection[] = [
@@ -12,10 +12,10 @@ const sections: LegalSection[] = [
     heading: "1. Acceptance of terms",
     body: (
       <p>
-        By creating an account or using FAN FAM (the “Service”), you agree to be
+        By creating an account or using Fanation (the “Service”), you agree to be
         bound by these Terms of Service and our{" "}
         <a href="/legal/privacy">Privacy Policy</a>. If you do not agree, please
-        do not use the Service. You must be at least 18 years old to use FAN FAM.
+        do not use the Service. You must be at least 18 years old to use Fanation.
       </p>
     ),
   },
@@ -44,7 +44,7 @@ const sections: LegalSection[] = [
       <>
         <p>
           Creators retain ownership of the content they post. By posting, you
-          grant FAN FAM a non-exclusive, worldwide licence to host, display and
+          grant Fanation a non-exclusive, worldwide licence to host, display and
           distribute that content for the purpose of operating the Service.
         </p>
         <p>
@@ -90,7 +90,7 @@ const sections: LegalSection[] = [
     heading: "6. Termination",
     body: (
       <p>
-        You may stop using FAN FAM at any time. We may suspend or terminate your
+        You may stop using Fanation at any time. We may suspend or terminate your
         access if you breach these Terms or where required by law. Certain
         provisions survive termination, including payment obligations and
         liability limitations.
@@ -103,7 +103,7 @@ const sections: LegalSection[] = [
     body: (
       <p>
         The Service is provided “as is” without warranties of any kind. To the
-        fullest extent permitted by law, FAN FAM is not liable for indirect,
+        fullest extent permitted by law, Fanation is not liable for indirect,
         incidental, or consequential damages arising from your use of the Service.
       </p>
     ),
@@ -115,7 +115,7 @@ const sections: LegalSection[] = [
       <p>
         We may update these Terms from time to time. We will notify you of material
         changes. Questions? Email{" "}
-        <a href="mailto:legal@fanfam.app">legal@fanfam.app</a> or visit our{" "}
+        <a href="mailto:legal@fanation.app">legal@fanation.app</a> or visit our{" "}
         <a href="/contact">Contact</a> page.
       </p>
     ),
@@ -126,7 +126,7 @@ export default function TermsPage() {
   return (
     <LegalLayout
       title="Terms of Service"
-      intro="Please read these terms carefully — they govern your access to and use of FAN FAM."
+      intro="Please read these terms carefully — they govern your access to and use of Fanation."
       updated="1 June 2026"
       sections={sections}
     />
